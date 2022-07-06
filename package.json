@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://tnextbigthing.atlassian.net/browse/WMD-48"
+    "url": "https://tnextbigthing.atlassian.net/browse/WMD-51"
   },
   "homepage": "https://github.com/weeve-modules/opcua-discovery",
   "devDependencies": {
