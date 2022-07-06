@@ -39,6 +39,15 @@ OPC UA Discovery looks for all available nodes onn OPC UA Server and forwards th
 | INGRESS_HOST          | string | Host where app is running |
 | INGRESS_PORT          | string | Port where app is running |
 
+## Output that is sent to next module looks like this
+
+```js
+  {
+    "status":true,
+    "data":[85,86,87] //IDs of discovered nodes
+  }
+```
+
 ## Dependencies
 
 ```js

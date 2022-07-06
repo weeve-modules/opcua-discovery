@@ -46,7 +46,7 @@ const processNodes = async () => {
 
     const list = []
     for (const reference of browseResult.references) {
-      list.push(reference.browseName.toString())
+      list.push(reference.nodeId.value)
     }
     await send(list)
     await session.close()

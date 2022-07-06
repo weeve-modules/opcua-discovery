@@ -5,7 +5,7 @@ module.exports = {
   INGRESS_PORT: env('INGRESS_PORT', '8080'),
   MODULE_NAME: env('MODULE_NAME', 'OPC UA Discovery'),
   EGRESS_URL: env('EGRESS_URL', ''),
-  OPC_UA_SERVER: env('OPC_UA_SERVER', 'opc.tcp://localhost:26543'),
+  OPC_UA_SERVER: env('OPC_UA_SERVER', 'opc.tcp://opcua.demo-this.com:51210/UA/SampleServer'),
   MAX_RETRY: env('MAX_RETRY', 1),
   OPC_UA_PASSWORD: env('OPC_UA_PASSWORD', ''),
   OPC_UA_USERNAME: env('OPC_UA_USERNAME', ''),
