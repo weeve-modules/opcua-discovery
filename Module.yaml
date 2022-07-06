@@ -2,7 +2,7 @@ version: 1.0.0
 name: OPCUADiscovery
 description: OPC UA Discovery looks for all available nodes onn OPC UA Server and forwards the payload to next module.
 icon: https://icons-020-demo.s3.eu-central-1.amazonaws.com/mi_OPCUA_input.png
-type: input
+type: Process
 tags:
   - OPC UA Discovery
   - process
