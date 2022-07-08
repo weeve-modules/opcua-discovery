@@ -21,13 +21,12 @@ OPC UA Discovery looks for all available nodes onn OPC UA Server and forwards th
 
 ## Environment Variables
 
-| Environment Variables   | type    | Description                               |
-| ----------------------- | ------- | ----------------------------------------- |
-| OPC_UA_SERVER           | string  | OPC UA Server endpoint                    |
-| MAX_RETRY               | integer | Max retry for connection                  |
-| REQUIRES_AUTHENTICATION | string  | Yes/No if connection needs authentication |
-| OPC_UA_USERNAME         | string  | Username if authentication is required    |
-| OPC_UA_PASSWORD         | string  | Password if authentication is required    |
+| Environment Variables | type    | Description                            |
+| --------------------- | ------- | -------------------------------------- |
+| OPC_UA_SERVER         | string  | OPC UA Server endpoint                 |
+| MAX_RETRY             | integer | Max retry for connection               |
+| OPC_UA_USERNAME       | string  | Username if authentication is required |
+| OPC_UA_PASSWORD       | string  | Password if authentication is required |
 
 ### Module Specific
 

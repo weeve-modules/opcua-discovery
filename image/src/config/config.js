@@ -9,5 +9,4 @@ module.exports = {
   MAX_RETRY: env('MAX_RETRY', 1),
   OPC_UA_PASSWORD: env('OPC_UA_PASSWORD', ''),
   OPC_UA_USERNAME: env('OPC_UA_USERNAME', ''),
-  REQUIRES_AUTHENTICATION: env('REQUIRES_AUTHENTICATION', 'no'),
 }

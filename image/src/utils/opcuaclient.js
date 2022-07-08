@@ -6,7 +6,6 @@ const {
   EGRESS_URL,
   MODULE_NAME,
   OPC_UA_SERVER,
-  REQUIRES_AUTHENTICATION,
   OPC_UA_USERNAME,
   OPC_UA_PASSWORD,
 } = require('../config/config')
@@ -40,7 +39,7 @@ const processNodes = async () => {
     */
     const userIdentity = { type: UserTokenType.UserName, userName: OPC_UA_USERNAME, password: OPC_UA_PASSWORD }
     const session =
-      REQUIRES_AUTHENTICATION === 'yes' ? await client.createSession(userIdentity) : await client.createSession()
+      OPC_UA_USERNAME && OPC_UA_PASSWORD ? await client.createSession(userIdentity) : await client.createSession()
 
     const browseResult = await session.browse('RootFolder')
 
