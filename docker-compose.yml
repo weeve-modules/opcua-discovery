@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      MODULE_NAME: opcua-discovery
+      MODULE_NAME: OPC UA Discovery
       MODULE_TYPE: INGRESS
       INGRESS_HOST: 127.0.0.1
       INGRESS_PORT: 80      

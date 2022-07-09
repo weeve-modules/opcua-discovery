@@ -1,4 +1,4 @@
-# OPCUADiscovery
+# OPC UA Discovery
 
 |                |                                                                                       |
 | -------------- | ------------------------------------------------------------------------------------- |
@@ -7,7 +7,7 @@
 | Dockerhub Link | [weevenetwork/opcua-discovery](https://hub.docker.com/r/weevenetwork/opcua-discovery) |
 | Authors        | Mesud Pasic                                                                           |
 
-- [OPCUADiscovery](#OPCUADiscovery)
+- [OPC UA Discovery](#OPCUADiscovery)
   - [Description](#description)
   - [Features](#features)
   - [Environment Variables](#environment-variables)
