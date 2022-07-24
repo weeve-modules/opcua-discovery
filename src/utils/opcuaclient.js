@@ -3,14 +3,12 @@ const { OPCUAClient, MessageSecurityMode, SecurityPolicy, UserTokenType } = requ
 const fetch = require('node-fetch')
 const {
   MAX_RETRY,
-  EGRESS_URL,
+  EGRESS_URLS,
   MODULE_NAME,
   OPC_UA_SERVER,
   OPC_UA_USERNAME,
   OPC_UA_PASSWORD,
 } = require('../config/config')
-
-const { isValidURL } = require('./util')
 
 const connectionStrategy = {
   maxRetry: MAX_RETRY,
@@ -54,8 +52,8 @@ const processNodes = async () => {
   }
 }
 const send = async list => {
-  if (isValidURL(EGRESS_URL)) {
-    await fetch(EGRESS_URL, {
+  if (EGRESS_URLS) {
+    await fetch(EGRESS_URLS, {
       method: 'POST',
       body: JSON.stringify({
         status: true,

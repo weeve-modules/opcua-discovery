@@ -1,0 +1,16 @@
+version: "3.0"
+services:
+  opcua-discovery:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    environment:
+      MODULE_NAME: "OPC UA Discovery"
+      MODULE_TYPE: "Input"
+      EGRESS_URLS: "https://testdockercompose.free.beeceptor.com"
+      INGRESS_HOST: "0.0.0.0"
+      INGRESS_PORT: "80"
+      PROFILE_IDS: ''
+      MATCHED_URL: ''
+    ports:
+      - 80:80
