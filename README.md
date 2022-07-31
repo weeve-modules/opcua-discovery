@@ -1,11 +1,11 @@
 # OPC UA Discovery
 
-|                |                                                                                       |
-| -------------- | ------------------------------------------------------------------------------------- |
-| Name           | OPC UA Discovery                                                                      |
-| Version        | v1.0.0                                                                                |
+|           |                                                                                       |
+| --------- | ------------------------------------------------------------------------------------- |
+| Name      | OPC UA Discovery                                                                      |
+| Version   | v1.0.0                                                                                |
 | DockerHub | [weevenetwork/opcua-discovery](https://hub.docker.com/r/weevenetwork/opcua-discovery) |
-| Authors        | Mesud Pasic                                                                           |
+| Authors   | Mesud Pasic                                                                           |
 
 - [OPC UA Discovery](#OPCUADiscovery)
   - [Description](#description)
@@ -32,13 +32,13 @@ OPC UA Discovery looks for all available nodes onn OPC UA Server and forwards th
 
 ### Set by the weeve Agent on the edge-node
 
-| Environment Variables | type   | Description               |
-| --------------------- | ------ | ------------------------- |
-| MODULE_NAME           | string | Name of the module        |
-| MODULE_TYPE           | string | Type of the module (Input, Processing, Output)    |
-| INGRESS_HOST          | string | Host where app is running |
-| INGRESS_PORT          | string | Port where app is running |
-| EGRESS_URLS           | string | HTTP ReST endpoint for the next module            |
+| Environment Variables | type   | Description                                    |
+| --------------------- | ------ | ---------------------------------------------- |
+| MODULE_NAME           | string | Name of the module                             |
+| MODULE_TYPE           | string | Type of the module (Input, Processing, Output) |
+| INGRESS_HOST          | string | Host where app is running                      |
+| INGRESS_PORT          | string | Port where app is running                      |
+| EGRESS_URLS           | string | HTTP ReST endpoint for the next module         |
 
 ## Output that is sent to next module looks like this
 
