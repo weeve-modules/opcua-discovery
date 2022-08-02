@@ -53,9 +53,8 @@ const processNodes = async () => {
 }
 const send = async list => {
   if (EGRESS_URLS) {
-    const urls = []
     const eUrls = EGRESS_URLS.replace(/ /g, '')
-    urls.push(...eUrls.split(','))
+    const urls = eUrls.split(',')
     urls.forEach(async url => {
       if (url) {
         try {
