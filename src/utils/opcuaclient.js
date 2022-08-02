@@ -76,6 +76,8 @@ const send = async list => {
         }
       }
     })
+  } else {
+    console.error('EGRESS_URLS is not provided.')
   }
 }
 
