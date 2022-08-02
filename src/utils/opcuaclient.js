@@ -55,35 +55,28 @@ const send = async list => {
   if (EGRESS_URLS) {
     const urls = []
     const eUrls = EGRESS_URLS.replace(/ /g, '')
-    if (eUrls.indexOf(',') !== -1) {
-      urls.push(...eUrls.split(','))
-    } else {
-      urls.push(eUrls)
-    }
+    urls.push(...eUrls.split(','))
     urls.forEach(async url => {
       if (url) {
-        const callRes = await fetch(url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            status: true,
-            data: list,
-          }),
-        })
-        if (!callRes.ok) {
-          console.error(`Error passing response data to ${url}`)
+        try {
+          const callRes = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              status: true,
+              data: list,
+            }),
+          })
+          if (!callRes.ok) {
+            console.error(`Error passing response data to ${url}, status: ${callRes.status}`)
+          }
+        } catch (e) {
+          console.error(`Error making request to: ${url}, error: ${e.message}`)
         }
       }
     })
-  } else {
-    console.log(
-      JSON.stringify({
-        status: true,
-        data: list,
-      })
-    )
   }
 }
 
